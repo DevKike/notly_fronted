@@ -18,7 +18,7 @@ const Login = () => {
           await post('http://localhost:3001/user/login', formData);
           successAlert('Iniciado con exito');
         } catch (error) {
-          console.error('Error al registrar usuario:', error);
+          console.error('Error al iniciar sesion:', error);
           errorAlert('Hubo un error al iniciar sesion');
         }
       };
@@ -40,8 +40,8 @@ const Login = () => {
         <div className="mb-2">
             <a href="/register" className="link-primary">No tienes cuenta? Regitrate</a>
         </div>
-        <div className="col-md-5">
-            <button type="submit" className='btn btn-outline-success'>Registrarse</button>
+        <div className="col-md-6">
+            <button type="submit" className='btn btn-outline-success'>Iniciar sesion</button>
         </div>
     </form>
     </div>;

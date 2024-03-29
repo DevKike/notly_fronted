@@ -7,15 +7,20 @@ import {
 } from "react-router-dom";
 
 import App from './App';
-import Register from './pages/register/Register';
 
 import 'notyf/notyf.min.css'; // for React, Vue and Svelte
-import Login from './pages/login/Login';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login/>,
+    element: <App/>,
+  },
+  {
+    path: "/login",
+    async lazy() {
+      let Login = (await import("./pages/login/Login.js")).default
+      return { Component: Login }
+    },
   },
   {
     path: "/register",
