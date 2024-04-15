@@ -9,21 +9,28 @@ import Pricing from './components/pricing/Pricing';
 function App() {
   return <>
     <Nav/>
+    <div className='container'>
+
     <Carousel/>
-    <p className='h3 mt-3'>Notly</p>
-    <p className='mt-3 text-justify'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <br></br>
+    <h2 className="display-5 mb-4 mb-md-5 text-center">
+    Ven y experimenta la experiencia de tener todas tus tareas a la mano y organizados con nuestros servicios
+</h2>
+<div className='row'>
+  <div className='col-md-3 mx-auto'>
+  <a className="btn btn-primary btn-lg mt-3" href="/register">Únete a nosotros</a>
+  </div>
+  </div>
+
+
     <div className='row'>
       <Card className="col-md-3"/>
-      <Card className="col-md-3"/>
-      <Card className="col-md-3"/>
-      <Card className="col-md-3"/>
     </div>
-    <p className='mt-3 text-justify'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <p className='mt-4 text-justify fs-5'>
+    En Notly, nuestro compromiso es brindarte la mejor experiencia posible para gestionar tus tareas de manera efectiva y sin complicaciones. Para aquellos que desean llevar su productividad al siguiente nivel, ofrecemos tres planes premium diseñados para adaptarse a tus necesidades:
     </p>
     <Pricing/>
+    </div>
   </>
 }
 

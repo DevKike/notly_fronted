@@ -28,12 +28,19 @@ const router = createBrowserRouter([
       let Register = (await import("./pages/register/Register.js")).default
       return { Component: Register }
     },
+  },
+  {
+    path: "/application",
+    async lazy() {
+      let Application = (await import("./pages/application/Application.js")).default
+      return { Component: Application }
+    },
   }
 ]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className='container'>
+    <div className=''>
       <RouterProvider router={router} />
     </div>
   </React.StrictMode>,
